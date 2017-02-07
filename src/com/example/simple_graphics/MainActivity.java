@@ -20,4 +20,20 @@ public class MainActivity extends Activity {
         setContentView(demoview);  
     }  
   
-    
+    private class DemoView extends View{  
+        public DemoView(Context context){  
+            super(context);  
+        }  
+  
+        @Override protected void onDraw(Canvas canvas) {  
+            super.onDraw(canvas);  
+  
+           
+            Paint paint = new Paint();  
+            paint.setStyle(Paint.Style.FILL);  
+  
+           
+            paint.setColor(Color.WHITE);  
+            canvas.drawPaint(paint);  
+              
+            
